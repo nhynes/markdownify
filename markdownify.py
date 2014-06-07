@@ -20,8 +20,8 @@ fakelist = re.compile('\s+([0-9]+)\. ')
 fakeem = re.compile('(\*|_)+')
 
 #some classes of elements
-void_elems = ['area', 'base', 'br', 'col', 'embed', 'hr', 'img', 'input', 'keygen', 'link', 'meta', 'param', 'source', 'track', 'wbr']
-inline_nonmarkdown_elem = ['big', 'small', 'abbr', 'acronym', 'cite', 'dfn', 'kbd', 'samp', 'var', 'bdo', 'map', 'object', 'q', 'script', 'span', 'sub', 'sup', 'button', 'input', 'label', 'select']
+void_elems = {'area', 'base', 'br', 'col', 'embed', 'hr', 'img', 'input', 'keygen', 'link', 'meta', 'param', 'source', 'track', 'wbr'}
+inline_nonmarkdown_elem = {'big', 'small', 'abbr', 'acronym', 'cite', 'dfn', 'kbd', 'samp', 'var', 'bdo', 'map', 'object', 'q', 'script', 'span', 'sub', 'sup', 'button', 'input', 'label', 'select'}
 
 def repeat_string(string, times):
     """
